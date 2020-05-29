@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f1f4f8;
+  background: url('./cov19.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#header { 
+  font-size: 0.8rem;
+  color: black;
+  text-align: left;
+  padding: 1rem;
+}
+#underline {
+  font-weight: 700;
+}
+
+
+
+
+.main-headline {
+text-align: center;
+margin-bottom: 5%;
+text-decoration: underline;
+opacity: 0.65;
+}
+
+
+
+.cards {
+    z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+
+    background-color:#e3e2df;
+    margin: 3rem 4rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0.65;
+}
+
+.card h3 {
+  text-align: center;
+  margin: 1rem;
+  color: #E40044;
+}
+
+#recHead {
+  color: limegreen;
+}
+
+.cards .card p {
+  padding: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+
+  #select {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+    
+  }
+
+
+  @media (max-width: 575.98px) { 
+    .main-headline {
+      text-align: center;
+    }
+    #footer {
+      text-align: center;
+    }
+   }
